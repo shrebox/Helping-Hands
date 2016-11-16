@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Register Page</title>
+    <style>
+    html,body{
+    padding:0px;
+    margin:0px;
+    margin-top: 0px;
+    }
+      
+    ul.nishant{
+    
+    padding:10px;
+    text-align:right;
+    margin-top: 0px;
+    }
+    
+    .nishant li{
+    font-family:sans-serif;
+    font-size:20px;
+    font-weight:bolder;
+    display:inline;
+    padding-left:20px;
+    vertical-align:middle;
+    
+    
+    }
+    
+    .topdiv{
+    background-color:#283848;
+    height:100px;
+    margin:0px;
+    margin-top: 0px;
+    color:white;
+    padding-right:30px;
+    margin-top:-10px;
+    }
+
+    .middiv{
+    background-color:white;
+    height:400px;
+    margin:0px;
+    color:gray;
+    font-size:18px;
+    font-weight:bold;
+    padding-left:20%;
+    padding-top:60px;
+    }
+    .middiv input{
+    font-size:16px;
+    font-weight:bold;
+    color:gray;
+    }
+    .lowerdiv{
+    background-color:silver;
+    height:200px;
+    margin:0px;
+    color:white;
+    }
+    
+    section{text-align: center;}
+
+input{display:block;width:50%;padding:30px;float:right;margin: 10px;}
+textarea:focus, input:focus{
+    border-color: inherit;
+    box-shadow:none;
+}
+p{text-align: left;
+padding-left: 10px; 
+}
+ #g{float:left; font-family: sans-serif; font-size: 15px; margin-top: 50px; margin-left: -290px;}
+ img{float:left; margin-left: -250px;width:50%;}
+    </style>
+
+    <script type="text/javascript">
+    
+    function login()
+    {
+     if(document.getElementById("txtpwd").value.length==0)
+     {
+     alert("Password cannot be left blank!");
+     document.getElementById("txtpwd").focus(); 
+     return false;
+     }
+     return true;
+    }
+    
+    </script>
+
+</head>
+<body>
+    <form target="_self" action="C:\Users\Y S Ramya\Desktop\New folder\submit.html"> 
+        <div class="topdiv">
+        
+            <span style="float: left; font-size: 40px; font-weight: bolder; padding-top: 25px;
+                padding-left: 50px;font-family:sans-serif">Helping Hands</span><br>
+            <span id="g">"We can't help everyone but everyone can help someone"-<i> Ronald Reagan</i> </span>
+
+
+        
+            <ul class="nishant">
+                <li>Organizations</li>
+                <li>Home</li>
+                
+            </ul>
+        </div>
+        <div class="middiv">
+            
+            <section id="contact">
+        <div class="container">
+
+        <div class="=container">
+        	<div class="row">
+        	
+        		<img src="hope.jpg">
+
+        	</div>
+        </div>
+
+           <form>
+           <label>Fill up your details for us!
+
+           </label>
+           <div style="text-align:left"> 
+           
+            
+           <br>
+                <input type="text" class="elan" placeholder="Name">
+            <br> 
+                <input type="text" class="elan" placeholder="Username">
+            <br> 
+                <input type="password" class="elan" placeholder="Password">
+            <br> 
+                <input type="password" class="elan" placeholder="Re-enter your Password">
+            <br> 
+                <input type="text" class="elan" placeholder="Date Of Birth (DD/MM/YY)">
+            <br>
+                 <input type="Submit" value="Register" onclick="return login();" width="50%">
+            </form>
+           </div>
+    </section>
+
+        </div>
+        
+    </form>
+</body>
+</html>
